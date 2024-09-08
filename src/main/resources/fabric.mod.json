@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "inhibitor",
+  "version": "${version}",
+  "name": "Inhibitor",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/inhibitor/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "goldenshadow.inhibitor.client.InhibitorClient"
+    ],
+    "main": [
+      "goldenshadow.inhibitor.Inhibitor"
+    ]
+  },
+  "mixins": [
+    "inhibitor.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
