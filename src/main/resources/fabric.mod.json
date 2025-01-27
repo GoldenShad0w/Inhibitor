@@ -3,10 +3,13 @@
   "id": "inhibitor",
   "version": "${version}",
   "name": "Inhibitor",
-  "description": "",
-  "authors": [],
-  "contact": {},
-  "license": "All-Rights-Reserved",
+  "description": "A small mod that gives you the option to stop wynntils from scanning your player data or connecting you to any services",
+  "authors": ["_GoldenShadow"],
+  "contact": {
+    "sources": "https://github.com/GoldenShad0w/Inhibitor",
+    "issues": "https://github.com/GoldenShad0w/Inhibitor/issues"
+  },
+  "license": "MIT",
   "icon": "assets/inhibitor/icon.png",
   "environment": "client",
   "entrypoints": {
@@ -15,6 +18,9 @@
     ],
     "main": [
       "goldenshadow.inhibitor.Inhibitor"
+    ],
+    "modmenu": [
+      "goldenshadow.inhibitor.client.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -23,6 +29,8 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "cloth-config" : "*",
+    "modmenu" : "*"
   }
 }

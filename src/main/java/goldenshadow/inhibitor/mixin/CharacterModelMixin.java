@@ -1,5 +1,7 @@
-package dragxd.wynntilssuppressor.mixin.wynntils;
+package goldenshadow.inhibitor.mixin;
 
+import goldenshadow.inhibitor.client.InhibitorClient;
+import goldenshadow.inhibitor.client.InhibitorConfig;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;
@@ -12,6 +14,8 @@ public abstract class CharacterModelMixin {
 
     @Inject(at = @At("HEAD"), method = "Lcom/wynntils/models/character/CharacterModel;scanCharacterInfo(Z)V", cancellable = true)
     private void sendCharacterInfo(boolean forceParseEverything, CallbackInfo ci) {
-        ci.cancel();
+        if (InhibitorClient.CONFIG.stopCompassScraping) {
+            ci.cancel();
+        }
     }
 }
