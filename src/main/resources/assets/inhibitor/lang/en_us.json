@@ -1,0 +1,10 @@
+{
+  "text.autoconfig.inhibitor.title" : "Inhibitor Config",
+  "text.autoconfig.inhibitor.option.stopPartyScraping" : "Stop Party Scraping",
+  "text.autoconfig.inhibitor.option.stopFriendScraping" : "Stop Friend Scraping",
+  "text.autoconfig.inhibitor.option.stopCompassScraping" : "Stop Compass Scraping",
+  "text.autoconfig.inhibitor.option.stopContentBookScraping" : "Stop Content Book Scraping",
+  "text.autoconfig.inhibitor.option.stopHadesConnection" : "Stop Hades Connection",
+  "text.autoconfig.inhibitor.option.stopAthenaConnection" : "Stop Athena Connection",
+  "text.autoconfig.inhibitor.option.gnomeMode" : "Gnome Mode"
+}

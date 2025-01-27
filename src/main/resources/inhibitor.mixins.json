@@ -4,8 +4,16 @@
   "package": "goldenshadow.inhibitor.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "ActivityModelMixin",
+    "CharacterModelMixin",
+    "FriendsModelMixin",
+    "HadesServiceMixin",
+    "PartyModelMixin",
+    "WynntilsAccountServiceMixin"
   ],
   "client": [
+    "gnome.CameraMixin",
+    "gnome.PlayerEntityRenderer"
   ],
   "injectors": {
     "defaultRequire": 1
