@@ -12,8 +12,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(targets = "com.wynntils.models.character.CharacterModel")
 public abstract class CharacterModelMixin {
 
-    @Inject(at = @At("HEAD"), method = "Lcom/wynntils/models/character/CharacterModel;scanCharacterInfo(Z)V", cancellable = true)
-    private void sendCharacterInfo(boolean forceParseEverything, CallbackInfo ci) {
+    @Inject(at = @At("HEAD"), method = "Lcom/wynntils/models/character/CharacterModel;scanCharacterInfo()V", cancellable = true)
+    private void sendCharacterInfo(CallbackInfo ci) {
         if (InhibitorClient.CONFIG.stopCompassScraping) {
             ci.cancel();
         }
