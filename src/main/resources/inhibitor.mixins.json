@@ -6,6 +6,8 @@
   "mixins": [
     "ActivityModelMixin",
     "CharacterModelMixin",
+    "ChatHandlerMixin",
+    "CommandHandlerMixin",
     "FriendsModelMixin",
     "HadesServiceMixin",
     "PartyModelMixin",

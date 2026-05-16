@@ -4,6 +4,7 @@
   "text.autoconfig.inhibitor.option.stopFriendScraping" : "Stop Friend Scraping",
   "text.autoconfig.inhibitor.option.stopCompassScraping" : "Stop Compass Scraping",
   "text.autoconfig.inhibitor.option.stopContentBookScraping" : "Stop Content Book Scraping",
+  "text.autoconfig.inhibitor.option.stopCommandRateLimiting" : "Stop Command Rate Limiting",
   "text.autoconfig.inhibitor.option.stopHadesConnection" : "Stop Hades Connection",
   "text.autoconfig.inhibitor.option.stopAthenaConnection" : "Stop Athena Connection",
   "text.autoconfig.inhibitor.option.gnomeMode" : "Gnome Mode"

@@ -14,6 +14,7 @@ public class InhibitorConfig implements ConfigData {
     public boolean stopFriendScraping = false;
     public boolean stopCompassScraping = false;
     public boolean stopContentBookScraping = false;
+    public boolean stopCommandRateLimiting = false;
     public boolean stopHadesConnection = false;
     public boolean stopAthenaConnection = false;
     public boolean gnomeMode = false;
